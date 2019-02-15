@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<!-- SOURCES -->
+<!-- Background Image: https://pixabay.com/en/nebula-universe-space-galaxy-2253941/ -->
+<!-- Fonts: https://fonts.google.com/?selection.family=Fugaz+One|Montserrat&query=fuga -->	
+<!-- Icons: https://www.flaticon.com/ -->
+
+<head >
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Austin Purtell's Project Website</title>
+	
+	<link rel="stylesheet" href="css/bootstrap-css.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+	<!-- why doesn't this icon ever work ._. -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
+	<link rel="icon" href="images/favicon.png" />
+	
+	<!-- I did not write this script. Source: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+				event.preventDefault();
+			  // Store hash
+			  	var hash = this.hash;
+
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({ scrollTop: $(hash).offset().top}, 800, function(){
+				  // Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+			  });
+				
+			} // End if
+		  });
+		});
+	</script>
+
+</head>
+	
+<body>
+	
+	<!-- NAV BAR -->
+	<a class="navicon" href="#home"><img src="images/favicon.png" alt="AP"></a>
+	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-transparent">
+		
+	  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      	 <span class="navbar-toggler-icon"></span>
+      </button>
+		
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+			
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+            </a>
+            <div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+            	<a class="dropdown-item" href="http://purtellap.students.cofc.edu/BulletinHelper/" target="_blank">Bulletin Helper</a>
+                <!--<a class="dropdown-item" href="#">3d Game</a>
+			    <a class="dropdown-item" href="#">Coin Collector</a>-->
+            </div>  
+          </li>
+			
+		  <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+			
+		  <li class="nav-item">
+            <a class="nav-link" id="log" href="#contact">Contact</a>
+          </li>	
+			
+		  <li class="nav-item">
+            <a class="nav-link disabled" href="#">Coming Soon</a>
+          </li>
+        </ul>  
+      </div>
+    </nav>
+	
+	<!-- HEADER -->
+	<section id="home">
+      <div class="jumbotron text-center bg-transparent text-white mb-0">
+        <div class="container bad-webdesign2">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="title">AUSTIN PURTELL</h1>
+			  <h2 class="subtitle">GAMES &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; WEBSITES &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; APPS &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; ASTRONOMY</h2>
+			</div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<!-- PROJECTS -->
+	
+	<section class="diagonal-top bg-white">
+	</section>
+	
+	<section class="main2 bg-white min-h-400 pt-4">
+		<div class="container">
+			<div class="text-transparent">
+				<h2 class="text-center fugaz">PROJECTS</h2>
+				<p class="mt-5 text-center">There doesn't seem to be much here... YET. <br><br> But just you wait. I have big plans.<br>BIG PLANS!</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="caption bg-white pt-5">
+		<div class="text-transparent font-weight-bolder">
+			<p class="c-4 caption col-3 float-right pw">Charmander (temp)</p>
+			<p class="c-3 caption col-3 float-right pw">M-33 (temp)</p>
+			<p class="c-2 caption col-3 float-right pw">Peace (temp)</p>				
+			<p class="c-1 caption col-3 float-right pw">Bulletin Helper</p>
+		</div>
+	</section> 
+	
+	<section class="main bg-white text-transparent">	
+		<a class="col-3 h-100 float-left mainblock mb1" href="http://purtellap.students.cofc.edu/BulletinHelper/" target="_blank">
+		</a>
+		<div class="col-3 h-100 float-left mainblock mb2">
+		</div>
+		<div class="col-3 h-100 float-left mainblock mb3">
+		</div>
+		<div class="col-3 h-100 float-left mainblock mb4">
+			<!--<img src="images/purtellap.png" class="img-fluid mainblock">-->
+		</div>
+	</section>
+	
+	<section class="diagonal-bottom bg-white">
+	</section>
+	
+	<!-- CONTACT -->
+	
+	<section class="diagonal-top bg-white mt-n1">
+	</section>
+	
+	<section class="main bg-white h-100" id="about">
+		<div class="container text-transparent">
+			<div class="abt">
+				<h2 class="m-auto fugaz">ABOUT ME</h2>
+				<div class="p-5">
+					<div class="col-4 ab-img"></div>
+					<div class="montserrat font-weight-bolder ab-desc"><p>Hi, I'm Austin. I'm a Computer Science, Computing in the Arts, and Astronomy major at College of Charleston. My desire to learn new skills never fades, especially if we're talking technology.  This website is a portfolio of all of my projects.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="diagonal-bottom bg-white">
+	</section>
+	
+	<section class="diagonal-bottom bg-white">
+	</section>
+	<section class="diagonal-top bg-white mt-n1">
+	</section>
+	<section class="diagonal-bottom bg-white mt-n1">
+	</section>
+	
+	<!-- ABOUT ME -->
+	<section class="diagonal-top bg-black mt-n1">
+	</section>
+	
+	<section class="main2 bg-black min-h-400" id="contact">
+		<div class="container">
+			<div class="text-transparent">
+				<h2 class="text-center m-auto fugaz pt-5 pb-5 contact">CONTACT</h2>
+				<p class="text-center m-auto col-8 p-4 font-italic text-fff-08"> I'm open to business opportunities! If you're interested, feel free to send me a text or email. </p>
+				<p class="text-center mt-5 text-blue pw"><a href="tel:+1-704-915-2854"><img src="images/phonew.png" alt="phone" class="icon"> 704 915 2854</a></p>
+				<p class="text-center text-blue pw"><a href="mailto:purtellap@g.cofc.edu"><img src="images/mail.png" alt="email" class="icon"> purtellap@g.cofc.edu</a></p>
+			</div>
+		</div>
+		
+	</section>
+	
+	<!--<section class="diagonal-bottom bg-black">
+	</section>-->
+	
+	<!-- SOCIALS -->
+	<div class="bg-black">
+	<div class="section pb-5">
+		<div class="container">
+			<div class="row pt-5">
+				<div class="col-12 p-4 text-center mx-auto text-transparent">
+					<strong class="font-1 text-fff-08">Or, connect with me</strong>
+					<div class="pt-4">
+						<a class="social" href="https://www.linkedin.com/in/austin-purtell/" 
+						   target="_blank"><img class="pad-5" src="images/linkedin.png" alt=""></a>
+						
+						<a class="social" href="https://app.joinhandshake.com/users/9979334" 
+						   target="_blank"><img class="pad-8" src="images/handshakeicon.png" alt=""></a>
+						
+						<a class="social" href="https://github.com/purtellap" 
+						   target="_blank"><img class="pad-5" src="images/github.png" alt=""></a>
+						
+						<a class="social" href="images/snapcode.jpg" 
+						   target="_blank"><img src="images/snapchat.png" alt=""></a>
+						
+						<a class="social" href="https://www.instagram.com/austinpurtell/?hl=en" 
+						   target="_blank"><img class="pad-8" src="images/instagram.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!-- FOOTER -->
+    <!--<footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 pt-3 text-fff-04">
+            <p>Copyright © Austin Purtell. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>-->
+		
+	</div>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap-4.2.1.js"></script>
+	
+</body>
+	
+</html>

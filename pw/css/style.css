@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Fugaz+One');
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  	margin: 0;
+  	font-size: 1rem;
+  	font-weight: 400;
+  	line-height: 1.5;
+  	color: #fff;
+  	text-align: left;
+  	background-image: url("../images/nebula2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body:hover{
+	cursor: default;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.text-fff-04 {
+	color: rgba(255,255,255,0.4);
+}
+.text-fff-08 {
+	color: rgba(255,255,255,0.8);
+}
+.text-000-10{
+	color: rgba(0,0,0,1);
+}
+.text-blue{
+	color: rgba(20,200,255,0.8);
+}
+.bg-black{
+	background-color: rgba(10,10,10,1);
+}
+.mt-n1{
+	margin-top: -1px;
+}
+
+.min-h-400{
+	min-height: 400px;
+}
+.h-400{
+	height: 400px;
+}
+
+.outline{
+	color: white;
+  	text-shadow: -1px -1px 0 #fff,  1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.fugaz{
+	font-family: 'fugaz-one', sans-serif;
+}
+
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.font-1{
+	font-size: 1.2em;
+	/*font-weight: lighter;*/
+	letter-spacing: 0.25px;
+}
+
+.navicon{
+	position: fixed;
+	z-index: 1;
+	padding: 1em;
+}
+
+.navbar {
+	position: fixed;
+	font-size: 1.1rem;
+	letter-spacing: -0.5px;
+	z-index: 1;
+	mix-blend-mode: difference;
+	margin-left: 2.5em;
+	margin-top: 0.3em;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu{
+	border: none;
+	margin-top: -0.5em;
+}
+
+.dropdown-item{
+	/*background-color: rgba(255,255,255,0.05);*/
+	border: none;
+	color: rgba(255,255,255,0.6);
+	font-size: 1.1rem;
+	letter-spacing: -0.5px;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-left: 0.4em;
+}
+
+.dropdown-item:hover{
+	background-color: transparent!important;
+	color: #fff!important;
+}
+
+.disabled{
+	color: rgba(255,255,255,0.3)!important;
+}
+
+.title-header{
+	background-color: transparent;
+}
+
+.title {
+	font-family: 'fugaz-one', sans-serif;
+	letter-spacing: -4px;
+	font-size: 6em;
+	font-weight: bolder;
+}
+
+.subtitle {
+	font-size: 1.5em;
+}
+
+.diagonal-top{
+	height: 15vh;
+	width: 100%;
+	clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+	
+}
+
+.diagonal-bottom{
+	height: 15vh;
+	width: 100%;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+	position: absolute;
+	z-index: -1;
+}
+
+.main{
+	margin-top: -1px;
+	margin-bottom: -1px;
+	height: 50vh;
+	color: rgba(0,0,0,0.8);
+	font-size: 1.5em;
+}
+
+.text-transparent h2{
+	font-size: 3em;
+	font-weight: 900;
+	background-image: url("../images/nebula2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-attachment: fixed;
+	text-fill-color: rgba(255,255,255,0.05);
+    background-clip: text;
+	-webkit-text-fill-color: rgba(255,255,255,0.05);
+    -webkit-background-clip: text;
+}
+.text-transparent .pw {
+	background-image: url("../images/nebula2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-attachment: fixed;
+	text-fill-color: rgba(255,255,255,0);
+    background-clip: text;
+	-webkit-text-fill-color: rgba(255,255,255,0);
+    -webkit-background-clip: text;
+}
+
+.text-transparent .pw:hover{
+	text-fill-color: rgba(255,255,255,0.2);
+    background-clip: text;
+	-webkit-text-fill-color: rgba(255,255,255,0.2);
+    -webkit-background-clip: text;
+}
+/*
+.ree{
+	background-image: url("../images/nebula2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-attachment: fixed;
+}
+.raw{
+    color: white;
+    padding: 6em 20px 20px;
+}
+
+.ree h2{
+	
+    font-size: 5em;
+    left: 0;
+    line-height: 100%;
+    padding-top: 25px; 
+    position: absolute; 
+    text-align: center;
+    top: 0;
+    width: 100%;
+	mix-blend-mode: overlay;
+}*/
+
+.caption{
+	height: 10vh;
+	color: rgba(0,0,0,0.4);
+	font-size: 1.3em;
+	text-align: center;
+	font-style: italic;
+	padding: 0;
+	margin-bottom: -1vh;
+}
+
+.c-1{
+	transform: rotate(-5deg);
+	margin-top: 4vh;
+	
+}
+.c-2{
+	transform: rotate(-5deg);
+	margin-top: 0.25vh;
+}
+.c-3{
+	transform: rotate(-5deg);
+	margin-top: -3.5vh;
+}
+.c-4{
+	transform: rotate(-5deg);
+	margin-top: -7.25vh;
+}
+
+.mainblock{
+	-webkit-clip-path: polygon(0 7.5%, 100% 0%, 100% 92.5%, 0% 100%);
+	clip-path: polygon(0 7.5%, 100% 0%, 100% 92.5%, 0% 100%);
+	margin-left: -1px;
+	margin-right: -1px;
+}
+
+.mb1{
+	margin-left: 0px;
+	background-image: url("../images/bidness.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+	margin-top: -2.5vh;
+}
+.mb2{
+	background-image: url("../images/buddha.JPG");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	margin-top: -6.25vh;
+	
+}
+.mb3{
+	background-image: url("../images/m33.JPG");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	margin-top: -10vh;
+	
+}
+.mb4{
+	background-image: url("../images/charmander.JPG");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	margin-top: -13.75vh;
+}
+
+.container{
+	height: 100%;
+	overflow: hidden;
+}
+
+.main2{
+	margin-top: -1px;
+	margin-bottom: -1px;
+	color: rgba(0,0,0,0.8);
+	font-size: 1.5em;
+}
+.abt{
+	text-align: center;
+	height: 100%;
+}
+
+.ab-img{
+	float: left;
+	background-image: url("../images/lazy5.jpeg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+	width: 10em;
+	height: 10em;
+	max-height: 10em;
+	max-width: 10em;
+	border-radius: 50%;
+	overflow-wrap: break-word;
+}
+.ab-desc{
+	float: right;
+	font-size: 0.8em;
+	text-align: left;
+	margin-top: 5vh;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+	position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.icon{
+	width: 32px;
+	height: 32px;
+	margin-right: 20px;
+}
+
+.contact{
+	font-size: 3em;
+	font-weight: 900;
+	color: #fff;
+}
+
+.text-blue a{
+	color: inherit;
+	-webkit-user-select: all;
+  	-moz-user-select: all;     
+  	-ms-user-select: all;     
+ 	 user-select: all; 
+}
+.text-blue a:hover {
+	text-decoration: none;
+	color: rgba(20, 200, 255, 0.5);
+}
+
+.bad-webdesign{
+	margin-top: 20vh;
+}
+.bad-webdesign2{
+	margin-top: 10vh;
+}
+
+.social {
+	padding: 0px 4px;
+}
+.social img {
+	width: 40px;
+	height: 40px;
+	border: 2px solid rgba(255,255,255,1);
+	border-radius: 0.25rem;
+	
+}
+
+.social img:hover{
+	background-color: rgba(0,0,0,1);
+	background-image: url("../images/nebula2.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-attachment: fixed;
+}
+.pad-5{
+	padding: 5px;
+}
+.pad-8{
+	padding: 8px;
+}
+
+@media (max-width: 990px){
+	.navbar{
+		mix-blend-mode: normal;
+	}
+	.navbar-toggler{
+		background-color:  rgba(0,0,0,0.5);
+	}
+	.nav-item{
+		background-color: rgba(0,0,0,1);
+		padding-left: 20px;
+		position: relative;
+		z-index: 1;
+	}
+	.dropdown-item {
+		background-color: rgba(0,0,0,1)!important;
+	}
+
+	.title{
+		font-size: 3em;
+	}
+	.subtitle {
+		font-size: 1em;
+	}
+	.fugaz{
+		font-size: 2em!important;
+	}
+	.ab-img{
+		float: none;
+		clear: both;
+		width: 100%;
+		margin: auto;
+	}
+	.ab-desc{
+		float: none;
+		clear: both;
+		width: 100%;
+		margin: auto;
+		margin-top: 5vh;
+		text-align: center;
+		min-width: 250px;
+	}
+	.mainblock{
+		clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+		-webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+	}
+	.mb1{
+		margin-top: 1vh;
+		min-width: 50%;
+	}
+	.mb2{
+		margin-top: -6.5vh;
+		min-width: 50%;
+	}
+	.c-1 {
+		margin-bottom: -6vh;
+		min-width: 50%;
+		transform: rotate(-12deg);
+	}
+	.c-2{
+		margin-top: -1vh;
+		min-width: 50%;
+		transform: rotate(-12deg);
+	}
+	
+	.mb3, .mb4, .c-3, .c-4{
+		display: none;
+	}
+	.text-transparent h2{
+		-webkit-text-fill-color: rgba(255,255,255,0.2);
+    	-webkit-background-clip: text;
+	}
+	.text-transparent .pw{
+		-webkit-text-fill-color: rgba(255,255,255,0.2);
+    	-webkit-background-clip: text;
+	}
+}
+
+@media(max-width: 500px){
+	
+	body{
+    	background-repeat:repeat-y;
+   	 	background-position: center center;
+		-webkit-background-attachment: fixed;
+	}
+	.mainblock{
+		-webkit-clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0% 100%);
+		clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0% 100%);
+	}
+	.mb1{
+		margin-top: -5vh;
+		min-width: 100%;
+	}
+	.mb2, .c-2{
+		display: none;
+	}
+	.c-1{
+		min-width: 100%;
+		transform: rotate(-20deg);
+	}
+}
+
+@media (max-height: 500px){
+	.caption{
+		display: none;
+	}
+}
