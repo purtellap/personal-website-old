@@ -59,6 +59,10 @@ body:hover{
 .bg-black{
 	background-color: rgba(10,10,10,1);
 }
+
+.bg-transparent {
+  background-color: transparent;
+}
 .mt-n1{
 	margin-top: -1px;
 }
@@ -68,6 +72,14 @@ body:hover{
 }
 .h-400{
 	height: 400px;
+}
+
+.pl-20{
+	padding-left: 20px;
+}
+
+.pr-20{
+	padding-right: 20px;
 }
 
 .outline{
@@ -101,6 +113,13 @@ body:hover{
 	letter-spacing: -0.5px;
 	z-index: 1;
 	mix-blend-mode: difference;
+	/*margin-left: 2.5em;
+	margin-top: 0.3em;*/
+	width: 100%;
+	background: rgba(0,0,0,0);
+}
+
+.navbar-nav{
 	margin-left: 2.5em;
 	margin-top: 0.3em;
 }
@@ -171,14 +190,6 @@ body:hover{
 	z-index: -1;
 }
 
-.main{
-	margin-top: -1px;
-	margin-bottom: -1px;
-	height: 50vh;
-	color: rgba(0,0,0,0.8);
-	font-size: 1.5em;
-}
-
 .text-transparent h2{
 	font-size: 3em;
 	font-weight: 900;
@@ -210,31 +221,16 @@ body:hover{
 	-webkit-text-fill-color: rgba(255,255,255,0.2);
     -webkit-background-clip: text;
 }
-/*
-.ree{
-	background-image: url("../images/nebula2.jpg");
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-	background-attachment: fixed;
-}
-.raw{
-    color: white;
-    padding: 6em 20px 20px;
-}
 
-.ree h2{
-	
-    font-size: 5em;
-    left: 0;
-    line-height: 100%;
-    padding-top: 25px; 
-    position: absolute; 
-    text-align: center;
-    top: 0;
+.col-3-r{
+	position: relative;
     width: 100%;
-	mix-blend-mode: overlay;
-}*/
+    padding-right: 15px;
+    padding-left: 15px;
+	-ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
 
 .caption{
 	height: 10vh;
@@ -247,60 +243,90 @@ body:hover{
 }
 
 .c-1{
-	transform: rotate(-5deg);
-	margin-top: 4vh;
-	
-}
-.c-2{
-	transform: rotate(-5deg);
-	margin-top: 0.25vh;
-}
-.c-3{
-	transform: rotate(-5deg);
-	margin-top: -3.5vh;
-}
-.c-4{
-	transform: rotate(-5deg);
-	margin-top: -7.25vh;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 500;
 }
 
-.mainblock{
-	-webkit-clip-path: polygon(0 7.5%, 100% 0%, 100% 92.5%, 0% 100%);
-	clip-path: polygon(0 7.5%, 100% 0%, 100% 92.5%, 0% 100%);
-	margin-left: -1px;
-	margin-right: -1px;
+.row1::after{
+	content: "";
+    clear: both;
+    display: table;
 }
 
-.mb1{
-	margin-left: 0px;
-	background-image: url("../images/bidness.jpg");
+.row1{
+	text-align: center;
+}
+
+.circimg {
+	float: left;
+	width: 25%;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.circimg img {
+	width: 20vw;
+	height: 20vw;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+}
+
+.hoverlink {position:relative;}
+.hoverlink .linkimg,
+.hoverlink .linktext {transition: opacity 0.5s ease-in-out;}
+
+.hoverlink .linktext {
+	font-size: 0.8em;
+	style: none;
+	position:absolute; 
+	left:0; 
+	top: -50%;
+	opacity:0; 
+	width:100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align:center;
+	font-weight: bolder;
+	background-image: url("../images/nebula2.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 50%;
-	margin-top: -2.5vh;
+    background-position: center center;
+	background-attachment: fixed;
+	text-fill-color: rgba(255,255,255,0);
+    background-clip: text;
+	-webkit-text-fill-color: rgba(255,255,255,0);
+    -webkit-background-clip: text;
+}
+.hoverlink:hover .linkimg {opacity: 0.2;}
+.hoverlink:hover .linktext {opacity:1;}
+
+/* SQUARE */
+/*.circimg img {
+	height: 20vw;
+	object-fit: cover;
+	object-position: top;
+	padding: 0 20px;
+}*/
+.mb1{
+	margin-left: 0px;
+	background-image: url("../images/bidness.jpg");   
 }
 .mb2{
 	background-image: url("../images/buddha.JPG");
-	background-size: cover;
-    background-repeat: no-repeat;
     background-position: center center;
-	margin-top: -6.25vh;
-	
 }
 .mb3{
 	background-image: url("../images/m33.JPG");
-	background-size: cover;
-    background-repeat: no-repeat;
     background-position: center center;
-	margin-top: -10vh;
-	
 }
 .mb4{
 	background-image: url("../images/charmander.JPG");
-	background-size: cover;
-    background-repeat: no-repeat;
     background-position: center center;
-	margin-top: -13.75vh;
 }
 
 .container{
@@ -308,11 +334,32 @@ body:hover{
 	overflow: hidden;
 }
 
+.main{
+	margin-top: -1px;
+	margin-bottom: -1px;
+	color: rgba(0,0,0,0.8);
+	font-size: 1.5em;
+	padding-top: 6vw;
+}
+
 .main2{
 	margin-top: -1px;
 	margin-bottom: -1px;
 	color: rgba(0,0,0,0.8);
 	font-size: 1.5em;
+	height: 600px;
+}
+
+.main3{
+	margin-top: -1px;
+	margin-bottom: -1px;
+	color: rgba(0,0,0,0.8);
+	font-size: 1.5em;
+	height: 40vh;
+	border: 1px solid black;
+	margin: auto;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 .abt{
 	text-align: center;
@@ -403,21 +450,12 @@ body:hover{
 	padding: 8px;
 }
 
-@media (max-width: 990px){
-	.navbar{
-		mix-blend-mode: normal;
-	}
+@media (max-width: 1400px){
+	
 	.navbar-toggler{
-		background-color:  rgba(0,0,0,0.5);
-	}
-	.nav-item{
-		background-color: rgba(0,0,0,1);
-		padding-left: 20px;
-		position: relative;
-		z-index: 1;
-	}
-	.dropdown-item {
-		background-color: rgba(0,0,0,1)!important;
+		background-color:  rgba(0,0,0,0.2);
+		margin-top: 5px;
+		margin-left: 40px;
 	}
 
 	.title{
@@ -444,32 +482,7 @@ body:hover{
 		text-align: center;
 		min-width: 250px;
 	}
-	.mainblock{
-		clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
-		-webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
-	}
-	.mb1{
-		margin-top: 1vh;
-		min-width: 50%;
-	}
-	.mb2{
-		margin-top: -6.5vh;
-		min-width: 50%;
-	}
-	.c-1 {
-		margin-bottom: -6vh;
-		min-width: 50%;
-		transform: rotate(-12deg);
-	}
-	.c-2{
-		margin-top: -1vh;
-		min-width: 50%;
-		transform: rotate(-12deg);
-	}
 	
-	.mb3, .mb4, .c-3, .c-4{
-		display: none;
-	}
 	.text-transparent h2{
 		-webkit-text-fill-color: rgba(255,255,255,0.2);
     	-webkit-background-clip: text;
@@ -478,29 +491,40 @@ body:hover{
 		-webkit-text-fill-color: rgba(255,255,255,0.2);
     	-webkit-background-clip: text;
 	}
+	
+	.circimg {
+		width: 50%;
+	}
+	.circimg img {
+		width: 32vw;
+		height: 32vw;
+	}
+	
 }
 
 @media(max-width: 500px){
+	
+	.navbar{
+		mix-blend-mode: normal;
+	}
+	.nav-item{
+		background-color: rgba(0,0,0,.8);
+		position: relative;
+		z-index: 1;
+		width: 40%;
+	}
 	
 	body{
     	background-repeat:repeat-y;
    	 	background-position: center center;
 		-webkit-background-attachment: fixed;
 	}
-	.mainblock{
-		-webkit-clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0% 100%);
-		clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0% 100%);
+	.circimg {
+		width: 100%;
 	}
-	.mb1{
-		margin-top: -5vh;
-		min-width: 100%;
-	}
-	.mb2, .c-2{
-		display: none;
-	}
-	.c-1{
-		min-width: 100%;
-		transform: rotate(-20deg);
+	.circimg img {
+		width: 56vw;
+		height: 56vw;
 	}
 }
 
@@ -508,4 +532,5 @@ body:hover{
 	.caption{
 		display: none;
 	}
+	
 }
